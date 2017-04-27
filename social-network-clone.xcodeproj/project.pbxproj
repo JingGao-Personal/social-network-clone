@@ -13,6 +13,7 @@
 		DC3890A31EB169AE00C92F80 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A21EB169AE00C92F80 /* RoundBtn.swift */; };
 		DC3890A51EB16F5700C92F80 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A41EB16F5700C92F80 /* FancyField.swift */; };
 		DC3890A71EB174E900C92F80 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A61EB174E900C92F80 /* FancyBtn.swift */; };
+		DC7160031EB1957E00D666B7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7160021EB1957E00D666B7 /* FBSDKLoginKit.framework */; };
 		DCDE49C71EB0724200498F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE49C61EB0724200498F1F /* AppDelegate.swift */; };
 		DCDE49C91EB0724200498F1F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE49C81EB0724200498F1F /* SignInVC.swift */; };
 		DCDE49CC1EB0724200498F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE49CA1EB0724200498F1F /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		DC3890A21EB169AE00C92F80 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		DC3890A41EB16F5700C92F80 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		DC3890A61EB174E900C92F80 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		DC7160021EB1957E00D666B7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		DC7160061EB1B12500D666B7 /* social-network-clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "social-network-clone.entitlements"; sourceTree = "<group>"; };
 		DCDE49C31EB0724200498F1F /* social-network-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-network-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDE49C61EB0724200498F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDE49C81EB0724200498F1F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7160031EB1957E00D666B7 /* FBSDKLoginKit.framework in Frameworks */,
 				07216E675A32F2ECC4537E4F /* Pods_social_network_clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +59,7 @@
 		4BED8C86E191A3E1F2D9BB47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC7160021EB1957E00D666B7 /* FBSDKLoginKit.framework */,
 				89812019C11CF50A100B4742 /* Pods_social_network_clone.framework */,
 			);
 			name = Frameworks;
@@ -115,6 +120,7 @@
 		DCDE49C51EB0724200498F1F /* social-network-clone */ = {
 			isa = PBXGroup;
 			children = (
+				DC7160061EB1B12500D666B7 /* social-network-clone.entitlements */,
 				DC38909F1EB1667400C92F80 /* Util */,
 				DC13D9431EB09DE0001636CC /* Model */,
 				DC13D9441EB09DF0001636CC /* View */,
@@ -175,6 +181,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 36T8EM67R4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -393,7 +404,12 @@
 			baseConfigurationReference = 7281B4886C0EE0ACA1C0EA20 /* Pods-social-network-clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "social-network-clone/social-network-clone.entitlements";
 				DEVELOPMENT_TEAM = 36T8EM67R4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+				);
 				INFOPLIST_FILE = "social-network-clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.social-network-clone";
@@ -407,7 +423,12 @@
 			baseConfigurationReference = 0EDA907B410F5B37DE0E63C7 /* Pods-social-network-clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "social-network-clone/social-network-clone.entitlements";
 				DEVELOPMENT_TEAM = 36T8EM67R4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+				);
 				INFOPLIST_FILE = "social-network-clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jinggao.social-network-clone";
