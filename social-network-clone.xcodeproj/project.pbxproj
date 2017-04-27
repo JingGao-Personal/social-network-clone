@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		07216E675A32F2ECC4537E4F /* Pods_social_network_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89812019C11CF50A100B4742 /* Pods_social_network_clone.framework */; };
+		DC38909E1EB164C000C92F80 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38909D1EB164C000C92F80 /* FancyView.swift */; };
+		DC3890A11EB1669000C92F80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A01EB1669000C92F80 /* Constants.swift */; };
+		DC3890A31EB169AE00C92F80 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A21EB169AE00C92F80 /* RoundBtn.swift */; };
+		DC3890A51EB16F5700C92F80 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A41EB16F5700C92F80 /* FancyField.swift */; };
+		DC3890A71EB174E900C92F80 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A61EB174E900C92F80 /* FancyBtn.swift */; };
 		DCDE49C71EB0724200498F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE49C61EB0724200498F1F /* AppDelegate.swift */; };
 		DCDE49C91EB0724200498F1F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE49C81EB0724200498F1F /* SignInVC.swift */; };
 		DCDE49CC1EB0724200498F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE49CA1EB0724200498F1F /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		0EDA907B410F5B37DE0E63C7 /* Pods-social-network-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-network-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-network-clone/Pods-social-network-clone.release.xcconfig"; sourceTree = "<group>"; };
 		7281B4886C0EE0ACA1C0EA20 /* Pods-social-network-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-network-clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-network-clone/Pods-social-network-clone.debug.xcconfig"; sourceTree = "<group>"; };
 		89812019C11CF50A100B4742 /* Pods_social_network_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_network_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC38909D1EB164C000C92F80 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		DC3890A01EB1669000C92F80 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC3890A21EB169AE00C92F80 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		DC3890A41EB16F5700C92F80 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		DC3890A61EB174E900C92F80 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		DCDE49C31EB0724200498F1F /* social-network-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-network-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDE49C61EB0724200498F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDE49C81EB0724200498F1F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -60,6 +70,10 @@
 		DC13D9441EB09DF0001636CC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC38909D1EB164C000C92F80 /* FancyView.swift */,
+				DC3890A21EB169AE00C92F80 /* RoundBtn.swift */,
+				DC3890A41EB16F5700C92F80 /* FancyField.swift */,
+				DC3890A61EB174E900C92F80 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -70,6 +84,14 @@
 				DCDE49C81EB0724200498F1F /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		DC38909F1EB1667400C92F80 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DC3890A01EB1669000C92F80 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		DCDE49BA1EB0724200498F1F = {
@@ -93,6 +115,7 @@
 		DCDE49C51EB0724200498F1F /* social-network-clone */ = {
 			isa = PBXGroup;
 			children = (
+				DC38909F1EB1667400C92F80 /* Util */,
 				DC13D9431EB09DE0001636CC /* Model */,
 				DC13D9441EB09DF0001636CC /* View */,
 				DC13D9451EB09DF7001636CC /* Controller */,
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3890A51EB16F5700C92F80 /* FancyField.swift in Sources */,
 				DCDE49C91EB0724200498F1F /* SignInVC.swift in Sources */,
+				DC3890A31EB169AE00C92F80 /* RoundBtn.swift in Sources */,
 				DCDE49C71EB0724200498F1F /* AppDelegate.swift in Sources */,
+				DC38909E1EB164C000C92F80 /* FancyView.swift in Sources */,
+				DC3890A11EB1669000C92F80 /* Constants.swift in Sources */,
+				DC3890A71EB174E900C92F80 /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
