@@ -20,6 +20,7 @@
 		DCDE49CE1EB0724200498F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDE49CD1EB0724200498F1F /* Assets.xcassets */; };
 		DCDE49D11EB0724200498F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDE49CF1EB0724200498F1F /* LaunchScreen.storyboard */; };
 		DCDE49D91EB0731700498F1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDE49D81EB0731700498F1F /* GoogleService-Info.plist */; };
+		DCF813441EB2EB92009EB35B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF813431EB2EB92009EB35B /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DCDE49D01EB0724200498F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCDE49D21EB0724200498F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCDE49D81EB0731700498F1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCF813431EB2EB92009EB35B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDE49C81EB0724200498F1F /* SignInVC.swift */,
+				DCF813431EB2EB92009EB35B /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				DCDE49C91EB0724200498F1F /* SignInVC.swift in Sources */,
 				DC3890A31EB169AE00C92F80 /* RoundBtn.swift in Sources */,
 				DCDE49C71EB0724200498F1F /* AppDelegate.swift in Sources */,
+				DCF813441EB2EB92009EB35B /* FeedVC.swift in Sources */,
 				DC38909E1EB164C000C92F80 /* FancyView.swift in Sources */,
 				DC3890A11EB1669000C92F80 /* Constants.swift in Sources */,
 				DC3890A71EB174E900C92F80 /* FancyBtn.swift in Sources */,

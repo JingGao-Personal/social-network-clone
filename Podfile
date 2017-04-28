@@ -14,5 +14,6 @@ target 'social-network-clone' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'SwiftKeychainWrapper'
 
 end
