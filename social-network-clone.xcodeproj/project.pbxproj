@@ -14,6 +14,7 @@
 		DC3890A51EB16F5700C92F80 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A41EB16F5700C92F80 /* FancyField.swift */; };
 		DC3890A71EB174E900C92F80 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3890A61EB174E900C92F80 /* FancyBtn.swift */; };
 		DC7160031EB1957E00D666B7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7160021EB1957E00D666B7 /* FBSDKLoginKit.framework */; };
+		DCB428E71EB88F0B006D67FB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB428E61EB88F0B006D67FB /* DataService.swift */; };
 		DCD36A051EB6B3FA00F01C42 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD36A041EB6B3FA00F01C42 /* CircleView.swift */; };
 		DCD36A071EB6D5C700F01C42 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD36A061EB6D5C700F01C42 /* PostCell.swift */; };
 		DCDE49C71EB0724200498F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE49C61EB0724200498F1F /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		DC3890A61EB174E900C92F80 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		DC7160021EB1957E00D666B7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		DC7160061EB1B12500D666B7 /* social-network-clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "social-network-clone.entitlements"; sourceTree = "<group>"; };
+		DCB428E61EB88F0B006D67FB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DCD36A041EB6B3FA00F01C42 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		DCD36A061EB6D5C700F01C42 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		DCDE49C31EB0724200498F1F /* social-network-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-network-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,14 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		DCB428E51EB88EE5006D67FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCB428E61EB88F0B006D67FB /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		DCDE49BA1EB0724200498F1F = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		DCDE49C51EB0724200498F1F /* social-network-clone */ = {
 			isa = PBXGroup;
 			children = (
+				DCB428E51EB88EE5006D67FB /* Services */,
 				DC7160061EB1B12500D666B7 /* social-network-clone.entitlements */,
 				DC38909F1EB1667400C92F80 /* Util */,
 				DC13D9431EB09DE0001636CC /* Model */,
@@ -288,6 +299,7 @@
 				DCDE49C91EB0724200498F1F /* SignInVC.swift in Sources */,
 				DC3890A31EB169AE00C92F80 /* RoundBtn.swift in Sources */,
 				DCDE49C71EB0724200498F1F /* AppDelegate.swift in Sources */,
+				DCB428E71EB88F0B006D67FB /* DataService.swift in Sources */,
 				DCF813441EB2EB92009EB35B /* FeedVC.swift in Sources */,
 				DC38909E1EB164C000C92F80 /* FancyView.swift in Sources */,
 				DC3890A11EB1669000C92F80 /* Constants.swift in Sources */,
